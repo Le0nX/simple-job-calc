@@ -61,12 +61,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7le-da-1Vz">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <state key="normal" title="Clear calc">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalcBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deQ-aj-0na"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZZG-dU-JqM" firstAttribute="top" secondItem="gR9-uL-uBd" secondAttribute="bottom" constant="45" id="4MY-zr-45M"/>
                             <constraint firstItem="iiV-nD-lA6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="89o-LW-GXl"/>
                             <constraint firstItem="iiV-nD-lA6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="99x-Rn-yN7"/>
+                            <constraint firstItem="7le-da-1Vz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BI7-af-55p"/>
                             <constraint firstItem="gR9-uL-uBd" firstAttribute="top" secondItem="USR-3B-rWi" secondAttribute="bottom" constant="25" id="FVm-Ku-Aa5"/>
                             <constraint firstItem="gR9-uL-uBd" firstAttribute="height" secondItem="USR-3B-rWi" secondAttribute="height" id="Hug-f4-iVL"/>
                             <constraint firstItem="alK-tn-14w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JM3-92-9Sd"/>
@@ -75,7 +85,9 @@
                             <constraint firstItem="USR-3B-rWi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NJj-q7-PWm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gR9-uL-uBd" secondAttribute="trailing" constant="20" id="Ou6-jv-1dN"/>
                             <constraint firstItem="B1r-So-EDO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TkP-gy-2bO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7le-da-1Vz" secondAttribute="trailing" constant="20" id="U8R-PA-bOf"/>
                             <constraint firstItem="gR9-uL-uBd" firstAttribute="trailing" secondItem="USR-3B-rWi" secondAttribute="trailing" id="bge-gl-udd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7le-da-1Vz" secondAttribute="bottom" constant="20" id="clV-kW-MQF"/>
                             <constraint firstItem="ZZG-dU-JqM" firstAttribute="width" secondItem="gR9-uL-uBd" secondAttribute="width" id="e9P-3l-WLM"/>
                             <constraint firstItem="gR9-uL-uBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eOQ-8H-0oQ"/>
                             <constraint firstItem="B1r-So-EDO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="gIV-y3-MDe"/>
@@ -89,7 +101,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="alK-tn-14w" id="uek-DI-OQ9"/>
                         <outlet property="priceTxt" destination="gR9-uL-uBd" id="hAQ-Qn-Ef8"/>
+                        <outlet property="resultLbl" destination="ZZG-dU-JqM" id="O6p-wj-xMm"/>
                         <outlet property="wageTxt" destination="USR-3B-rWi" id="CEq-4a-xes"/>
                     </connections>
                 </viewController>
