@@ -13,7 +13,20 @@
 		148B8FE921E3F21C001F8775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148B8FE821E3F21C001F8775 /* Assets.xcassets */; };
 		148B8FEC21E3F21C001F8775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148B8FEA21E3F21C001F8775 /* LaunchScreen.storyboard */; };
 		148B8FF721E3FD18001F8775 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B8FF621E3FD18001F8775 /* CurrencyTextField.swift */; };
+		148B8FFF21E4E8D1001F8775 /* simpe_job_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B8FFE21E4E8D1001F8775 /* simpe_job_calcTests.swift */; };
+		148B900821E4E911001F8775 /*  Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B900721E4E911001F8775 /*  Wage.swift */; };
+		148B900921E4EDB7001F8775 /*  Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B900721E4E911001F8775 /*  Wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		148B900121E4E8D1001F8775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 148B8FD621E3F21A001F8775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 148B8FDD21E3F21A001F8775;
+			remoteInfo = "simpe job calc";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		148B8FDE21E3F21A001F8775 /* simpe job calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simpe job calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		148B8FEB21E3F21C001F8775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148B8FED21E3F21C001F8775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		148B8FF621E3FD18001F8775 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		148B8FFC21E4E8D1001F8775 /* simpe job calcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "simpe job calcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		148B8FFE21E4E8D1001F8775 /* simpe_job_calcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpe_job_calcTests.swift; sourceTree = "<group>"; };
+		148B900021E4E8D1001F8775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148B900721E4E911001F8775 /*  Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Wage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		148B8FDB21E3F21A001F8775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		148B8FF921E4E8D1001F8775 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				148B8FE021E3F21A001F8775 /* simpe job calc */,
+				148B8FFD21E4E8D1001F8775 /* simpe job calcTests */,
 				148B8FDF21E3F21A001F8775 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				148B8FDE21E3F21A001F8775 /* simpe job calc.app */,
+				148B8FFC21E4E8D1001F8775 /* simpe job calcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 		148B8FE021E3F21A001F8775 /* simpe job calc */ = {
 			isa = PBXGroup;
 			children = (
+				148B900621E4E8F9001F8775 /* Model */,
 				148B8FF521E3FC04001F8775 /* Views */,
 				148B8FF421E3F67D001F8775 /* Controller */,
 				148B8FE121E3F21A001F8775 /* AppDelegate.swift */,
@@ -83,6 +110,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		148B8FFD21E4E8D1001F8775 /* simpe job calcTests */ = {
+			isa = PBXGroup;
+			children = (
+				148B8FFE21E4E8D1001F8775 /* simpe_job_calcTests.swift */,
+				148B900021E4E8D1001F8775 /* Info.plist */,
+			);
+			path = "simpe job calcTests";
+			sourceTree = "<group>";
+		};
+		148B900621E4E8F9001F8775 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				148B900721E4E911001F8775 /*  Wage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +147,24 @@
 			productReference = 148B8FDE21E3F21A001F8775 /* simpe job calc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		148B8FFB21E4E8D1001F8775 /* simpe job calcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 148B900321E4E8D1001F8775 /* Build configuration list for PBXNativeTarget "simpe job calcTests" */;
+			buildPhases = (
+				148B8FF821E4E8D1001F8775 /* Sources */,
+				148B8FF921E4E8D1001F8775 /* Frameworks */,
+				148B8FFA21E4E8D1001F8775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				148B900221E4E8D1001F8775 /* PBXTargetDependency */,
+			);
+			name = "simpe job calcTests";
+			productName = "simpe job calcTests";
+			productReference = 148B8FFC21E4E8D1001F8775 /* simpe job calcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -115,6 +177,10 @@
 				TargetAttributes = {
 					148B8FDD21E3F21A001F8775 = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					148B8FFB21E4E8D1001F8775 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 148B8FDD21E3F21A001F8775;
 					};
 				};
 			};
@@ -132,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				148B8FDD21E3F21A001F8775 /* simpe job calc */,
+				148B8FFB21E4E8D1001F8775 /* simpe job calcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		148B8FFA21E4E8D1001F8775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -156,11 +230,29 @@
 			files = (
 				148B8FE421E3F21A001F8775 /* MainVC.swift in Sources */,
 				148B8FF721E3FD18001F8775 /* CurrencyTextField.swift in Sources */,
+				148B900821E4E911001F8775 /*  Wage.swift in Sources */,
 				148B8FE221E3F21A001F8775 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		148B8FF821E4E8D1001F8775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148B900921E4EDB7001F8775 /*  Wage.swift in Sources */,
+				148B8FFF21E4E8D1001F8775 /* simpe_job_calcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		148B900221E4E8D1001F8775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 148B8FDD21E3F21A001F8775 /* simpe job calc */;
+			targetProxy = 148B900121E4E8D1001F8775 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		148B8FE521E3F21A001F8775 /* Main.storyboard */ = {
@@ -334,6 +426,46 @@
 			};
 			name = Release;
 		};
+		148B900421E4E8D1001F8775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28XXG6S5AU;
+				INFOPLIST_FILE = "simpe job calcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.xrobotics.simpe-job-calcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpe job calc.app/simpe job calc";
+			};
+			name = Debug;
+		};
+		148B900521E4E8D1001F8775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28XXG6S5AU;
+				INFOPLIST_FILE = "simpe job calcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.xrobotics.simpe-job-calcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/simpe job calc.app/simpe job calc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +483,15 @@
 			buildConfigurations = (
 				148B8FF121E3F21C001F8775 /* Debug */,
 				148B8FF221E3F21C001F8775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		148B900321E4E8D1001F8775 /* Build configuration list for PBXNativeTarget "simpe job calcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B900421E4E8D1001F8775 /* Debug */,
+				148B900521E4E8D1001F8775 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
