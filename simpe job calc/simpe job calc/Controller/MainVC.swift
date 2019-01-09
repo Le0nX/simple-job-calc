@@ -36,6 +36,7 @@ class MainVC: UIViewController {
         if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text {
             // если можем его конвертировать в Double
             if let wage = Double(wageTxt), let price = Double(priceTxt) {
+                view.endEditing(true) // dismiss keyboard
                 resultLbl.text = String(Wage.getHours(forWage: wage, andPrice: price))
                 resultLbl.isHidden = false
                 hoursLbl.isHidden = false
@@ -43,11 +44,11 @@ class MainVC: UIViewController {
         }
     }
     
-    @IBAction func clearCalcBtn(_ sender: UIButton) {
+    @IBAction func clearCalcBtn(_ sender: Any) {
         resultLbl.isHidden = true
         hoursLbl.isHidden = true
-        wageTxt.text = "$ "
-        priceTxt.text = "$ "
+        wageTxt.text = ""
+        priceTxt.text = ""
     }
     
 }
