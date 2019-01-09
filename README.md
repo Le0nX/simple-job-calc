@@ -1,6 +1,8 @@
 # simple-job-calc
 Demo app for calculating hours you need to work for buying some asset
 
+![](simp-calc.gif)
+
 ## What has been studied while developing this App? 
 * **Custom** text fields
 * **Custom** label
